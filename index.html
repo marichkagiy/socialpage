@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Опитування</title>
+</head>
+<form method="POST" action="https://formspree.io/fedevych.m@gmail.com">
+
+    <body>
+        <header>
+            <br>
+            <h1>Шкідливі звички серед молоді</h1>
+        </header>
+        <fieldset>
+            <legend> Особисті дані</legend>
+            <article>
+
+
+                <div>
+                    <label for="name"> 1. Ваше Ім'я:</label>
+                    <input type="text" id="name" name="user_name">
+                </div>
+                2. Ваша стать:
+                <br>
+                <input type="radio" name="gender" value="male" checked> Чоловік<br>
+                <input type="radio" name="gender" value="female" checked> Жінка<br>
+            </article>
+            <article>
+                <label>
+         3.Ваш Вік:
+         <input type="number" value="">
+         </label>
+            </article>
+        </fieldset>
+
+        <fieldset>
+            <legend> Шкідливі звички та ставлення</legend>
+            <label>4. Чи є у Вас шкідливі звички?</label>
+            <form>
+                <input type="radio" name="habbit" value="yes" checked> Так (перехід до пит.5)<br>
+                <input type="radio" name="habbit" value="no" checked> Ні (перехід до пит.6)<br>
+            </form>
+            <label>5. Які свої шкідливі звички Ви можете відзначити?</label>
+            <br>
+            <input type="Checkbox" name="superstition"> Куріння
+            <br>
+            <input type="Checkbox" name="superstition"> Вживання алкоголю
+            <br>
+            <input type="Checkbox" name="superstition"> Вживання наркотичних речовин
+
+            <label>
+            <br>
+                6. Опишіть будь ласка Ваше ставлення до популяризації шкідливих звичок серед молоді:
+                <br>
+                <textarea name="your message"></textarea>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend> Вирішення проблеми</legend>
+            <p>7. Що варто робити в першу чергу для вирішення проблеми шкідливих звичок?</p>
+            <select name="desicion">
+  <option value="desicion1"> Соціальні молодіжні акції</option>
+  <option value="desicion2">Популяризація здорового способу життя у ЗМІ</option>
+  <option value="desicion3">Залучення громадських організацій до вирішення проблеми</option>
+  <option value="desicion4">Створення лінії безкоштовної психологічної підтримки</option>
+</select>
+            <p>8. Оцініть, будь ласка, Вашу готовність брати участь у боротьбі зі шкідливими звичками молоді.</p>
+            <form action="handler.php">
+                <p><select multiple size="1">
+    <option>Готовий</option>
+    <option>Важко сказати готовий чи ні</option>
+    <option>Не готовий</option>
+    </select></p>
+            </form>
+        </fieldset>
+        <form method="POST" action="https://formspree.io/fedevych.m@gmail.com">
+            <input type="submit" value="Відправити"> <input type="reset" value="Скасувати">
+    </body>
+
+</html>
